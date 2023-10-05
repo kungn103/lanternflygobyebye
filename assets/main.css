@@ -1,0 +1,352 @@
+/* type setup */
+@font-face {
+    font-family: "arial-narrow";
+    src:
+      url("type/Arial\ Narrow.ttf");
+      font-weight: regular;
+}
+
+@font-face {
+    font-family: "arial-narrow-bold";
+    src:
+      url("type/Arial\ Narrow\ Bold.ttf");
+      font-weight: bold;
+}
+
+h1 {
+    font-family: arial-narrow, arial;
+    font-size: 5vh;
+    color: #03F41B;
+    line-height: normal;
+    font-weight: 400;
+    text-shadow: -1px -1px 0 #0451F5, 1px -1px 0 #0451F5, -1px 1px 0 #0451F5, 1px 1px 0 #0451F5;
+    filter: blur(0.9px);
+}
+
+h2, ul {
+    font-family: arial-narrow, arial;
+    font-size: 3vh;
+    color: #03F41B;
+    line-height: normal;
+    font-weight: 400;
+    text-shadow: -1px -1px 0 #0451F5, 1px -1px 0 #0451F5, -1px 1px 0 #0451F5, 1px 1px 0 #0451F5;
+    filter: blur(0.9px);
+}
+
+p {
+    font-family: arial-narrow, arial;
+    font-size: 2.5vh;
+    color: #03F41B;
+    line-height: normal;
+    font-weight: 400;
+    text-shadow: -1px -1px 0 #0451F5, 1px -1px 0 #0451F5, -1px 1px 0 #0451F5, 1px 1px 0 #0451F5;
+    filter: blur(0.9px);
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* anatomy */
+*{
+    overflow: hidden;
+    cursor: default;
+    user-select: none;
+}
+
+#background {
+    background-color:#F50304;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#background > img {
+    width: 120%;
+    height: auto;
+    position: absolute;
+    top: -55%;
+    left: -5%;
+    mix-blend-mode: hue;
+    animation: blurShift 5s alternate infinite;
+}
+
+#site-bones {
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2%;
+}
+
+#title {
+    margin-top: -0.5%;
+}
+
+#nav {
+    margin-top: 60vh;
+    width: fit-content;
+}
+
+ul li:hover {
+    font-family: arial-narrow-bold;
+    cursor: pointer;
+}
+
+#volume {
+    margin-top: -6.7vh;
+    margin-left: 46vw;
+}
+
+#info-button {
+    margin-top: -7.8vh;
+    margin-left: 95vw;
+}
+
+#info-button:hover {
+    font-family: arial-narrow-bold;
+    cursor: pointer;
+}
+
+/* info page */
+#info{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    /* left: 0;
+    background-color: #F50304; */
+    z-index: 1;
+}
+
+#info-bg > img {
+    width: 120%;
+    height: auto;
+    position: absolute;
+    top: -55%;
+    left: -5%;
+    mix-blend-mode: color-burn;
+    filter: blur(2px);
+    animation: flutter 5s alternate infinite;
+}
+
+#info > p {
+    width: 50vw;
+    margin-top: 10%;
+    margin-left: 45%;
+}
+
+/* pages */
+#method-1 {
+    height: 90vh;
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: fuchsia; */
+}
+
+#method-1 > div {
+    height: 60vh;
+    width: 68vw;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    background-color: orange;
+    mix-blend-mode: exclusion;
+}
+
+#method-1 > p {
+    width: 68vw;
+    margin-top: 55%;
+}
+
+#close{
+    width: fit-content;
+}
+
+#close:hover {
+    font-family: arial-narrow-bold;
+    cursor: pointer;
+}
+
+#method-2 {
+    height: 90vh;
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: fuchsia; */
+}
+
+#method-2 > div {
+    height: 60vh;
+    width: 68vw;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    background-color: orange;
+    mix-blend-mode: exclusion;
+}
+
+#method-2 > p {
+    width: 68vw;
+    margin-top: 55%;
+}
+
+#method-3 {
+    height: 90vh;
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: fuchsia; */
+}
+
+#method-3 > div {
+    height: 60vh;
+    width: 68vw;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    background-color: orange;
+    mix-blend-mode: exclusion;
+}
+
+#method-3 > p {
+    width: 68vw;
+    margin-top: 55%;
+}
+
+#method-4 {
+    height: 90vh;
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: fuchsia; */
+}
+
+#method-4 > div {
+    height: 60vh;
+    width: 68vw;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    background-color: orange;
+    mix-blend-mode: exclusion;
+}
+
+#method-4 > p {
+    width: 68vw;
+    margin-top: 55%;
+}
+
+#method-5 {
+    height: 90vh;
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: fuchsia; */
+}
+
+#method-5 > div {
+    height: 60vh;
+    width: 68vw;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    background-color: orange;
+    mix-blend-mode: exclusion;
+}
+
+#method-5 > p {
+    width: 68vw;
+    margin-top: 55%;
+}
+
+#method-6 {
+    height: 90vh;
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: fuchsia; */
+}
+
+#method-6 > div {
+    height: 60vh;
+    width: 68vw;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    background-color: orange;
+    mix-blend-mode: exclusion;
+}
+
+#method-6 > p {
+    width: 68vw;
+    margin-top: 55%;
+}
+
+#method-7 {
+    height: 90vh;
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: fuchsia; */
+}
+
+#method-7 > div {
+    height: 60vh;
+    width: 68vw;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    background-color: orange;
+    mix-blend-mode: exclusion;
+}
+
+#method-7 > p {
+    width: 68vw;
+    margin-top: 55%;
+}
+
+
+
+/* animations */
+@keyframes blurShift {
+    from {
+        filter: blur(5px);
+    }
+
+    to {
+        filter: blur(10px);
+    }
+
+}
+
+@keyframes flutter {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1.1, 100);
+    }
+
+}
+
+/* hide function */
+.hide{
+    display: none;
+}
