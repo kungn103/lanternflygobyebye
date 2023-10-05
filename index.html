@@ -10,24 +10,27 @@
 <body>
     <div id="background">
         <img id="background" src="assets/images/spotted-lanterfly.jpg" alt="spotted lanterfly">
+        <video autoplay="true" id="webcam"></video>
+        <!-- <div id="demo"><video autoplay="true" id="demo-1" loop = "true"> <source src="assets/videos/green-alpha.mov"></video></div> -->
+
     </div>
 
     <div id="site-bones">
         <h1 id="title">lanternflies go bye bye!</h1>
         <ul id="nav">
-            <li>⓵ step</li> 
-            <li>⓶ backstabbing</li>
-            <li>⓷ waterboard</li>
-            <li>⓸ accidental miss</li>
-            <li>⓹ positive phototaxis</li>
-            <li>⓺ play god</li>
-            <li>⓻ is it even worth it?</li>
+            <li onclick="show1()">⓵ step</li> 
+            <li onclick="show2()" onclick="show2()">⓶ backstabbing</li>
+            <li onclick="show3()">⓷ waterboard</li>
+            <li onclick="show4()">⓸ accidental miss</li>
+            <li onclick="show5()">⓹ positive phototaxis</li>
+            <li onclick="show6()">⓺ play god</li>
+            <li onclick="show7()">⓻ is it even worth it?</li>
         </ul>
-        <h2 id="volume">volume: on</h2>
-        <h1 id="info-button">?</h1>
-    </div>
+        <h2 id="volume" onclick="volumeOff()">volume: on</h2>
+        <h1 id="info-button" class = "" onclick="showInfo()">?</h1>
+        <h2 id="info-close" class= "hide" onclick="hideInfo()">close</h2>
 
-    <div id="info" class="hide">
+    <div id="info" class="hide" >
         <!-- <div id="info-bg">
             <img src="assets/images/spotted-lanterfly.jpg" alt="spotted lanterfly">
         </div> -->
@@ -37,49 +40,46 @@
             <br><br>
             designed and developed by Themis ☻
         </p>
-        <!-- <h2>close</h2> -->
     </div>
 
     <div id="method-1" class="hide">
-        <div id="demo"></div>
         <p>The tried and true instinctual method of killing insects. Whilst we are often discouraged from stepping on and arbitrarily deciding to take the life of another living being as children, this does not apply to the lanternfly. Assert your dominance as a larger creature to your heart’s content. </p>
-        <h2 id="close">close</h2>
+        <h2 id="close" onclick="hide1()">close</h2>
     </div>
 
     <div id="method-2" class="hide">
         <div id="demo"></div>
-        <p>The tried and true instinctual method of killing insects. Whilst we are often discouraged from stepping on and arbitrarily deciding to take the life of another living being as children, this does not apply to the lanternfly. Assert your dominance as a larger creature to your heart’s content. </p>
-        <h2 id="close">close</h2>
+        <p> First time I  saw a lanternfly was on a rooftop. I found the bug quite beautiful to look at. I simply had to let my loyal instagram followers know. To my dismay I was immediately informed that I was, in fact, stupid. This bug is an invasive species and so I killed it after exploiting its’ beauty. </p>
+        <h2 id="close" onclick="hide2()">close</h2>
     </div>
 
     <div id="method-3" class="hide">
         <div id="demo"></div>
-        <p>The tried and true instinctual method of killing insects. Whilst we are often discouraged from stepping on and arbitrarily deciding to take the life of another living being as children, this does not apply to the lanternfly. Assert your dominance as a larger creature to your heart’s content. </p>
-        <h2 id="close">close</h2>
+        <p>Lanternflies, similar to other insects are weak swimmers. If you have sadistic tendencies and want to inflict pain upon this bug prior to killing it this may be a method to explore. Some say that drowning is one of the worst ways to die because you can feel every moment of it.  </p>
+        <h2 id="close" onclick="hide3()">close</h2>
     </div>
 
     <div id="method-4" class="hide">
         <div id="demo"></div>
-        <p>The tried and true instinctual method of killing insects. Whilst we are often discouraged from stepping on and arbitrarily deciding to take the life of another living being as children, this does not apply to the lanternfly. Assert your dominance as a larger creature to your heart’s content. </p>
-        <h2 id="close">close</h2>
+        <p>This is another slow method of killing in which one hit does not kill the lanternfly, but slowly injures it to its eventual death. This happened to me once at a cafe where I tried to squash a lanternfly with an empty plastic cup. I accidentally didn’t kill it in one go and had to keep spashing and smushing the lanternfly. It deeply unsettled me and I get nightmares about it somtimes. Perhaps this was my karma for using single-use plastics. </p>
+        <h2 id="close" onclick="hide4()">close</h2>
     </div>
 
     <div id="method-5" class="hide">
         <div id="demo"></div>
-        <p>The tried and true instinctual method of killing insects. Whilst we are often discouraged from stepping on and arbitrarily deciding to take the life of another living being as children, this does not apply to the lanternfly. Assert your dominance as a larger creature to your heart’s content. </p>
-        <h2 id="close">close</h2>
+        <p>Insects are attracted to light. They can’t help it. What could be more fitting than killing a lanternfly with the very thing in its’ name? Traditional lanterns have a live flame. You could probably do this with a candle too and bury the corpse in the wax. Then you’d actually have completed a DIY project to domesticate a dead lanternfly for home decoration purposes.</p>
+        <h2 id="close" onclick="hide5()">close</h2>
     </div>
 
     <div id="method-6" class="hide">
         <div id="demo"></div>
-        <p>The tried and true instinctual method of killing insects. Whilst we are often discouraged from stepping on and arbitrarily deciding to take the life of another living being as children, this does not apply to the lanternfly. Assert your dominance as a larger creature to your heart’s content. </p>
-        <h2 id="close">close</h2>
+        <p>Fight nature with nature. Play god and plant some milkweed. Whilst the toxicity of milkweed towards lanternflies is still under debate, neem oil can be used to fend them off. But to be honest, it’s better if you just kill them on sight so they don’t spread any further.</p>
+        <h2 id="close" onclick="hide6()">close</h2>
     </div>
 
     <div id="method-7" class="hide">
-        <div id="demo"></div>
-        <p>The tried and true instinctual method of killing insects. Whilst we are often discouraged from stepping on and arbitrarily deciding to take the life of another living being as children, this does not apply to the lanternfly. Assert your dominance as a larger creature to your heart’s content. </p>
-        <h2 id="close">close</h2>
+        <p>maybe this is our natural selection as the biggest colonizers of nature.</p>
+        <h2 id="close" onclick="hide7()">close</h2>
     </div>
 
     <script type="text/javascript" src="assets/main.js"></script>
