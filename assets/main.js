@@ -12,13 +12,19 @@ function hideInfo(){
 }
 
 // volume control 
+let scratchSound = document.getElementById("site-sound");
+scratchSound.volume = 0.2;
 function volumeOff(){
     if (document.getElementById('volume').innerText === "volume: on"){
         document.getElementById('volume').innerText = "volume: off";
+        scratchSound.volume = 0;
     } else if (document.getElementById('volume').innerText === "volume: off"){
         document.getElementById('volume').innerText = "volume: on";
+        scratchSound.volume = 0.2;
     }
 }
+
+
 
 // show 1 - step 
 function show1(){
@@ -28,7 +34,14 @@ function show1(){
     document.getElementById('method-4').classList.add('hide');
     document.getElementById('method-5').classList.add('hide');
     document.getElementById('method-6').classList.add('hide');
-    document.getElementById('method-7').classList.add('hide');
+
+    document.getElementById('nav-1').style.textDecoration = "underline";
+    document.getElementById('nav-1').style.textDecorationColor = "#0451F5";
+    document.getElementById('nav-2').style.textDecoration = "none";
+    document.getElementById('nav-3').style.textDecoration = "none";
+    document.getElementById('nav-4').style.textDecoration = "none";
+    document.getElementById('nav-5').style.textDecoration = "none";
+    document.getElementById('nav-6').style.textDecoration = "none";
 
     var stream = video.srcObject;
     var tracks = stream.getTracks();
@@ -43,6 +56,8 @@ function show1(){
 
 function hide1(){
     document.getElementById('method-1').classList.add('hide');
+    document.getElementById('nav-1').style.textDecoration = "none";
+    
 }
 
 // show 2 - backstabbing
@@ -53,7 +68,14 @@ function show2(){
     document.getElementById('method-4').classList.add('hide');
     document.getElementById('method-5').classList.add('hide');
     document.getElementById('method-6').classList.add('hide');
-    document.getElementById('method-7').classList.add('hide');
+
+    document.getElementById('nav-1').style.textDecoration = "none";
+    document.getElementById('nav-2').style.textDecoration = "underline";
+    document.getElementById('nav-3').style.textDecoration = "none";
+    document.getElementById('nav-4').style.textDecoration = "none";
+    document.getElementById('nav-5').style.textDecoration = "none";
+    document.getElementById('nav-6').style.textDecoration = "none";
+    document.getElementById('nav-2').style.textDecorationColor = "#0451F5";
 
     var stream = video.srcObject;
     var tracks = stream.getTracks();
@@ -68,16 +90,7 @@ function show2(){
 
 function hide2(){
     document.getElementById('method-2').classList.add('hide');
-
-    var stream = video.srcObject;
-    var tracks = stream.getTracks();
-    
-    for (var i = 0; i < tracks.length; i++) {
-        var track = tracks[i];
-        track.stop();
-    }
-    
-    video.srcObject = null;
+    document.getElementById('nav-2').style.textDecoration = "none";
 }
 
 // show 3 - waterboard
@@ -88,7 +101,14 @@ function show3(){
     document.getElementById('method-4').classList.add('hide');
     document.getElementById('method-5').classList.add('hide');
     document.getElementById('method-6').classList.add('hide');
-    document.getElementById('method-7').classList.add('hide');
+
+    document.getElementById('nav-1').style.textDecoration = "none";
+    document.getElementById('nav-2').style.textDecoration = "none";
+    document.getElementById('nav-3').style.textDecoration = "underline";
+    document.getElementById('nav-4').style.textDecoration = "none";
+    document.getElementById('nav-5').style.textDecoration = "none";
+    document.getElementById('nav-6').style.textDecoration = "none";
+    document.getElementById('nav-3').style.textDecorationColor = "#0451F5";
 
     var stream = video.srcObject;
     var tracks = stream.getTracks();
@@ -103,6 +123,7 @@ function show3(){
 
 function hide3(){
     document.getElementById('method-3').classList.add('hide');
+    document.getElementById('nav-3').style.textDecoration = "none";
 }
 
 // show 4 - accidental miss 
@@ -113,7 +134,14 @@ function show4(){
     document.getElementById('method-4').classList.remove('hide');
     document.getElementById('method-5').classList.add('hide');
     document.getElementById('method-6').classList.add('hide');
-    document.getElementById('method-7').classList.add('hide');
+
+    document.getElementById('nav-1').style.textDecoration = "none";
+    document.getElementById('nav-2').style.textDecoration = "none";
+    document.getElementById('nav-3').style.textDecoration = "none";
+    document.getElementById('nav-4').style.textDecoration = "underline";
+    document.getElementById('nav-5').style.textDecoration = "none";
+    document.getElementById('nav-6').style.textDecoration = "none";
+    document.getElementById('nav-4').style.textDecorationColor = "#0451F5";
 
     var stream = video.srcObject;
     var tracks = stream.getTracks();
@@ -128,6 +156,7 @@ function show4(){
 
 function hide4(){
     document.getElementById('method-4').classList.add('hide');
+    document.getElementById('nav-4').style.textDecoration = "none";
 }
 
 // show 5 - phototaxis
@@ -138,7 +167,14 @@ function show5(){
     document.getElementById('method-4').classList.add('hide');
     document.getElementById('method-5').classList.remove('hide');
     document.getElementById('method-6').classList.add('hide');
-    document.getElementById('method-7').classList.add('hide');
+
+    document.getElementById('nav-1').style.textDecoration = "none";
+    document.getElementById('nav-2').style.textDecoration = "none";
+    document.getElementById('nav-3').style.textDecoration = "none";
+    document.getElementById('nav-4').style.textDecoration = "none";
+    document.getElementById('nav-5').style.textDecoration = "underline";
+    document.getElementById('nav-6').style.textDecoration = "none";
+    document.getElementById('nav-5').style.textDecorationColor = "#0451F5";
 
     var stream = video.srcObject;
     var tracks = stream.getTracks();
@@ -153,9 +189,11 @@ function show5(){
 
 function hide5(){
     document.getElementById('method-5').classList.add('hide');
+    document.getElementById('nav-5').style.textDecoration = "none";
 }
 
 // show 6 - play god
+var video = document.querySelector("#webcam");
 function show6(){
     document.getElementById('method-1').classList.add('hide');
     document.getElementById('method-2').classList.add('hide');
@@ -163,36 +201,14 @@ function show6(){
     document.getElementById('method-4').classList.add('hide');
     document.getElementById('method-5').classList.add('hide');
     document.getElementById('method-6').classList.remove('hide');
-    document.getElementById('method-7').classList.add('hide');
 
-    var stream = video.srcObject;
-    var tracks = stream.getTracks();
-    
-    for (var i = 0; i < tracks.length; i++) {
-        var track = tracks[i];
-        track.stop();
-    }
-    
-    video.srcObject = null;
-}
-
-function hide6(){
-    document.getElementById('method-6').classList.add('hide');
-    var stream = video.srcObject;
-    var tracks = stream.getTracks();
-    
-}
-
-// show 6 - play god
-var video = document.querySelector("#webcam");
-function show7(){
-    document.getElementById('method-1').classList.add('hide');
-    document.getElementById('method-2').classList.add('hide');
-    document.getElementById('method-3').classList.add('hide');
-    document.getElementById('method-4').classList.add('hide');
-    document.getElementById('method-5').classList.add('hide');
-    document.getElementById('method-6').classList.add('hide');
-    document.getElementById('method-7').classList.remove('hide');
+    document.getElementById('nav-1').style.textDecoration = "none";
+    document.getElementById('nav-2').style.textDecoration = "none";
+    document.getElementById('nav-3').style.textDecoration = "none";
+    document.getElementById('nav-4').style.textDecoration = "none";
+    document.getElementById('nav-5').style.textDecoration = "none";
+    document.getElementById('nav-6').style.textDecoration = "underline";
+    document.getElementById('nav-6').style.textDecorationColor = "#0451F5";
 
     if (navigator.mediaDevices.getUserMedia) {
     navigator.mediaDevices.getUserMedia({ video: true })
@@ -205,8 +221,10 @@ function show7(){
     }
 }
 
-function hide7(){
-    document.getElementById('method-7').classList.add('hide');
+function hide6(){
+    document.getElementById('method-6').classList.add('hide');
+    document.getElementById('nav-6').style.textDecoration = "none";
+
 
     var stream = video.srcObject;
     var tracks = stream.getTracks();

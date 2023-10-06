@@ -43,6 +43,19 @@ p {
     filter: blur(0.9px);
 }
 
+a {
+    font-family: arial-narrow, arial;
+    font-size: 2.5vh;
+    color: #03F41B;
+    line-height: normal;
+    font-weight: 400;
+    text-shadow: -1px -1px 0 #0451F5, 1px -1px 0 #0451F5, -1px 1px 0 #0451F5, 1px 1px 0 #0451F5;
+    filter: blur(0.1px);
+    text-decoration-color: #0451F5;
+}
+a:hover {
+    font-family: arial-narrow-bold;
+}
 
 ul {
     list-style-type: none;
@@ -91,7 +104,7 @@ ul {
 }
 
 #nav {
-    margin-top: 60vh;
+    margin-top: 64vh;
     width: fit-content;
 }
 
@@ -156,6 +169,27 @@ ul li:hover {
     margin-left: 40%;
 }
 
+#my-room {
+    text-decoration: underline;
+    text-decoration-color: #0451F5;
+}
+
+#my-room:hover {
+    font-family: arial-narrow-bold;
+}
+
+#my-room-img{
+    position: absolute;
+    height: 40vh;
+    width: auto;
+    display: none;
+    margin-top: 0%;
+}
+
+#my-room:hover #my-room-img {
+    display: block;
+}
+
 /* pages */
 #method-1 {
     height: 90vh;
@@ -171,12 +205,11 @@ ul li:hover {
     position: fixed;
     top: 10%;
     right: 2%;
-    mix-blend-mode: exclusion;
 }
 
 #method-1 > p {
     width: 68vw;
-    margin-top: 55%;
+    padding-top: 53%; 
 }
 
 #close{
@@ -194,7 +227,6 @@ ul li:hover {
     position: fixed;
     top: 0;
     right: 0;
-    /* background-color: fuchsia; */
 }
 
 #method-2 > div {
@@ -203,13 +235,34 @@ ul li:hover {
     position: fixed;
     top: 10%;
     right: 2%;
-    background-color: orange;
-    mix-blend-mode: exclusion;
 }
 
 #method-2 > p {
     width: 68vw;
-    margin-top: 55%;
+    padding-top: 53%; 
+}
+
+#instagram {
+    text-decoration: underline;
+    text-decoration-color: #0451F5;
+    overflow: visible;
+    display: inline;
+}
+
+#instagram:hover {
+    font-family: arial-narrow-bold;
+}
+
+#instagram-img{
+    position: fixed;
+    height: 50vh;
+    width: auto;
+    display: none;
+    transform: translateY(-130%);
+}
+
+#instagram:hover + #instagram-img {
+    display: block;
 }
 
 #method-3 {
@@ -218,7 +271,6 @@ ul li:hover {
     position: fixed;
     top: 0;
     right: 0;
-    /* background-color: fuchsia; */
 }
 
 #method-3 > div {
@@ -227,13 +279,34 @@ ul li:hover {
     position: fixed;
     top: 10%;
     right: 2%;
-    background-color: orange;
-    mix-blend-mode: exclusion;
 }
 
 #method-3 > p {
     width: 68vw;
-    margin-top: 55%;
+    padding-top: 53%;
+}
+
+#water {
+    text-decoration: underline;
+    text-decoration-color: #0451F5;
+    overflow: visible;
+    display: inline;
+}
+
+#water:hover {
+    font-family: arial-narrow-bold;
+}
+
+#waterboard-irl{
+    position: fixed;
+    height: 40vh;
+    width: auto;
+    display: none;
+    transform: translateY(-130%);
+}
+
+#water:hover + #waterboard-irl {
+    display: block;
 }
 
 #method-4 {
@@ -242,7 +315,6 @@ ul li:hover {
     position: fixed;
     top: 0;
     right: 0;
-    /* background-color: fuchsia; */
 }
 
 #method-4 > div {
@@ -251,14 +323,13 @@ ul li:hover {
     position: fixed;
     top: 10%;
     right: 2%;
-    background-color: orange;
-    mix-blend-mode: exclusion;
 }
 
 #method-4 > p {
     width: 68vw;
-    margin-top: 55%;
+    padding-top: 53%;
 }
+
 
 #method-5 {
     height: 90vh;
@@ -266,7 +337,6 @@ ul li:hover {
     position: fixed;
     top: 0;
     right: 0;
-    /* background-color: fuchsia; */
 }
 
 #method-5 > div {
@@ -275,13 +345,35 @@ ul li:hover {
     position: fixed;
     top: 10%;
     right: 2%;
-    background-color: orange;
-    mix-blend-mode: exclusion;
 }
 
 #method-5 > p {
     width: 68vw;
-    margin-top: 55%;
+    padding-top: 53%;
+}
+
+#bury {
+    text-decoration: underline;
+    text-decoration-color: #0451F5;
+    overflow: visible;
+    display: inline;
+}
+
+#bury:hover {
+    font-family: arial-narrow-bold;
+}
+
+#bugwax{
+    position: fixed;
+    height: 40vh;
+    width: auto;
+    right: 0;
+    transform: translateY(-130%);
+    display: none;
+}
+
+#bury:hover + #bugwax {
+    display: block;
 }
 
 #method-6 {
@@ -318,24 +410,60 @@ ul li:hover {
 }
 
 #webcam {
-    height: 60vh;
+    height: 70vh;
     width: auto;
     position: fixed;
     top: 10%;
-    right: 28%;
+    right: 22%;
     mix-blend-mode: exclusion;
     z-index: 1;
-
 }
 
-#demo-1 {
+#ani-1 {
     height: 60vh;
     width: auto;
     position: fixed;
-    top: 10%;
-    right: 2%;
-    mix-blend-mode: difference;
+    top: 8%;
+    right: 10%;
+    filter: blur(1px);
 }
+
+#ani-2 {
+    height: 60vh;
+    width: auto;
+    position: fixed;
+    top: 8%;
+    right: 20%;
+    filter: blur(1px);
+}
+
+#ani-3 {
+    height: 60vh;
+    width: auto;
+    position: fixed;
+    top: 8%;
+    right: 10%;
+    filter: blur(1px);
+}
+
+#ani-4 {
+    height: 60vh;
+    width: auto;
+    position: fixed;
+    top: 8%;
+    right: 8%;
+    filter: blur(1px);
+}
+
+#ani-5 {
+    height: 60vh;
+    width: auto;
+    position: fixed;
+    top: 8%;
+    right: 8%;
+    filter: blur(1px);
+}
+
 
 #method-7 > p {
     width: 68vw;
